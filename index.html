@@ -9,7 +9,7 @@
   <body>
     <nav class="navigation">
       <div class="left-nav">
-        <img src="./images/icon-menu.svg" alt="" class="menu">
+        <img src="./images/icon-menu.svg" alt="" class="menu" />
         <img src="./images/logo.svg" alt="" class="logo" />
         <ul class="list">
           <li>Collections</li>
@@ -65,9 +65,9 @@
         <p class="cp">$250.00</p>
         <div class="buttons">
           <div class="quantity">
-            <button class="minus">-</button>
-            <input type="text" value="0" class="amount" />
-            <button class="add">+</button>
+            <button onclick="decrease()" class="minus">-</button>
+            <div class="amount">0</div>
+            <button onclick="increase()" class="add">+</button>
           </div>
           <button class="add-to-cart">
             <img src="./images/icon-cart.svg" alt="" />Add to cart
@@ -75,5 +75,6 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
